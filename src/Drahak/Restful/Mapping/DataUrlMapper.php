@@ -1,19 +1,20 @@
 <?php
 namespace Drahak\Restful\Mapping;
 
+use Drahak\Restful\InvalidArgumentException;
 use Drahak\Restful\Resource\Media;
-use Nette\Object;
+use Nette\SmartObject;
 use Nette\Templating\Helpers;
 use Nette\Utils\Strings;
-use Drahak\Restful\InvalidArgumentException;
 
 /**
  * DataUrlMapper - encode or decode base64 file
  * @package Drahak\Restful\Mapping
  * @author Drahomír Hanák
  */
-class DataUrlMapper extends Object implements IMapper
+class DataUrlMapper implements IMapper
 {
+    use SmartObject;
 
 	/**
 	 * Create DATA URL from file

@@ -2,13 +2,12 @@
 namespace Drahak\Restful\Mapping;
 
 use DOMDocument;
-use Traversable;
-use SimpleXMLElement;
-use Nette\Object;
-use Nette\Utils\Json;
-use Nette\Utils\Arrays;
-use Nette\Utils\JsonException;
 use Drahak\Restful\InvalidArgumentException;
+use Nette\SmartObject;
+use Nette\Utils\Arrays;
+use Nette\Utils\Json;
+use Nette\Utils\JsonException;
+use Traversable;
 
 /**
  * XmlMapper
@@ -17,8 +16,9 @@ use Drahak\Restful\InvalidArgumentException;
  *
  * @property string|NULL $rootElement
  */
-class XmlMapper extends Object implements IMapper
+class XmlMapper implements IMapper
 {
+    use SmartObject;
 
 	/** @internal */
 	const ITEM_ELEMENT = 'item';

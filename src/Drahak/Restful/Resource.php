@@ -2,12 +2,12 @@
 namespace Drahak\Restful;
 
 use ArrayAccess;
-use Serializable;
 use ArrayIterator;
 use IteratorAggregate;
-use Nette\Object;
-use Nette\Utils\Json;
 use Nette\MemberAccessException;
+use Nette\SmartObject;
+use Nette\Utils\Json;
+use Serializable;
 
 /**
  * REST resource
@@ -17,8 +17,9 @@ use Nette\MemberAccessException;
  * @property string $contentType Allowed result content type
  * @property-read array $data
  */
-class Resource extends Object implements ArrayAccess, Serializable, IteratorAggregate, IResource
+class Resource implements ArrayAccess, Serializable, IteratorAggregate, IResource
 {
+    use SmartObject;
 
 
 	/** @var array */
