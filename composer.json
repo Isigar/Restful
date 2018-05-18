@@ -25,7 +25,8 @@
 		"nette/reflection": "~2.0|~3.0",
 		"nette/robot-loader": "~2.0|~3.0",
 		"nette/security": "~2.0|~3.0",
-		"nette/utils": "~2.0|~3.0"
+		"nette/utils": "~2.0|~3.0",
+		"nette/sandbox": "^2.4"
 	},
 	"require-dev": {
 		"drahak/oauth2": "dev-master",

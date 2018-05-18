@@ -2,18 +2,19 @@
 namespace Drahak\Restful\Security\Authentication;
 
 use Drahak\Restful\Http\IInput;
-use Drahak\Restful\Security\IAuthTokenCalculator;
 use Drahak\Restful\Security\AuthenticationException;
+use Drahak\Restful\Security\IAuthTokenCalculator;
 use Nette\Http\IRequest;
-use Nette\Object;
+use Nette\SmartObject;
 
 /**
  * Verify request hashing data and comparing the results
  * @package Drahak\Restful\Security\Authentication
  * @author Drahomír Hanák
  */
-class HashAuthenticator extends Object implements IRequestAuthenticator
+class HashAuthenticator implements IRequestAuthenticator
 {
+    use SmartObject;
 
 	/** Auth token request header name */
 	const AUTH_HEADER = 'X-HTTP-AUTH-TOKEN';
