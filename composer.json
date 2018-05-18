@@ -1,14 +1,18 @@
 {
-	"name": "drahak/restful",
+	"name": "isigar/restful",
 	"type": "library",
 	"description": "Nette REST API bundle",
-	"keywords": ["nette", "rest", "api", "drahak"],
+	"keywords": ["nette", "rest", "api", "drahak","isigar","php 7.2"],
 	"homepage": "http://www.drahak.eu",
 	"license": ["BSD-3-Clause", "GPL-2.0", "GPL-3.0"],
 	"authors": [
 		{
 			"name": "Drahomír Hanák",
 			"homepage": "http://www.drahak.eu"
+		},
+		{
+			"name": "Stanislav Opletal",
+			"homepage": "https://www.relisoft.cz"
 		}
 	],
 	"config": {
@@ -26,7 +30,6 @@
 		"nette/robot-loader": "~2.0|~3.0",
 		"nette/security": "~2.0|~3.0",
 		"nette/utils": "~2.0|~3.0",
-		"nette/sandbox": "^2.4"
 	},
 	"require-dev": {
 		"drahak/oauth2": "dev-master",
